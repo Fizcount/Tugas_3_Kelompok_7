@@ -1,0 +1,10 @@
+{
+  "/randomapi": {
+    "target": "https://randomuser.me/api/?results=1",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/randomapi": ""
+    }
+  }
+}

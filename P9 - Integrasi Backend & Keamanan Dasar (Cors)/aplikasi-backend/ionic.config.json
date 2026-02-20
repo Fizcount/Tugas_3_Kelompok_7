@@ -1,0 +1,7 @@
+{
+  "name": "aplikasi-backend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
