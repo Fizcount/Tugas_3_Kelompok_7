@@ -1,91 +1,132 @@
-TUGAS 3 KELOMPOK
-Praktikum HTTP Client Observable & Gemini AI Integration (P8)
-sampai dengan Mobile Security Defense & Digital Forensics (P15)
-Identitas Kelompok 7
-No	NIM	Nama
-1	230511162	Faiz Ramadhan Aji
-2	220511122	Muhammad Yusuf Kurnia
-3	220511035	Muhammad Farhan Saino
-Deskripsi Repository
+# TUGAS 3 KELOMPOK  
+## Implementasi Praktikum P8 – P15  
+### HTTP Client Observable, Gemini AI Integration, Mobile Security Defense & Digital Forensics
 
-Repository ini berisi kumpulan hasil praktikum dari Pertemuan 8 (P8) hingga Pertemuan 15 (P15). Seluruh implementasi dikompilasi dalam satu project utama sesuai dengan instruksi tugas.
+---
 
-Ruang lingkup praktikum meliputi:
+## Identitas Kelompok 7
 
-Implementasi HTTP Client berbasis Observable
+| No | NIM       | Nama                      |
+|----|----------|---------------------------|
+| 1  | 230511162 | Faiz Ramadhan Aji         |
+| 2  | 220511122 | Muhammad Yusuf Kurnia     |
+| 3  | 220511035 | Muhammad Farhan Saino     |
 
-Integrasi layanan Gemini AI ke dalam aplikasi
+---
 
-Penerapan Mobile Security Defense
+## Deskripsi Repository
 
-Analisis dan praktik dasar Digital Forensics
+Repository ini merupakan kumpulan hasil praktikum dari Pertemuan 8 (P8) sampai dengan Pertemuan 15 (P15).  
+Seluruh materi diimplementasikan dalam satu repository utama sebagai bentuk pemenuhan Tugas 3 Kelompok.
 
-Setiap pertemuan direalisasikan dalam bentuk source code yang terdokumentasi dan dapat dijalankan sesuai kebutuhan pengujian.
+Cakupan materi yang dikerjakan meliputi:
 
-Tujuan Praktikum
+- Implementasi HTTP Client berbasis Observable  
+- Integrasi layanan Gemini AI ke dalam aplikasi  
+- Implementasi sistem CRUD dan autentikasi berbasis JWT  
+- Kontrol kamera dan integrasi Google Maps  
+- Penerapan Mobile Security Defense  
+- Praktik dan analisis dasar Digital Forensics  
 
-Mengimplementasikan komunikasi client–server menggunakan HTTP Client dan Observable.
+Setiap pertemuan direalisasikan dalam bentuk source code yang dapat dijalankan dan diuji secara mandiri.
 
-Mengintegrasikan API Gemini AI ke dalam sistem aplikasi.
+---
 
-Menerapkan prinsip dasar keamanan aplikasi mobile.
+## Tujuan Pengembangan
 
-Memahami konsep dasar digital forensik pada sistem informasi.
+1. Mengimplementasikan komunikasi client–server menggunakan HTTP Client dan Observable.
+2. Mengintegrasikan API kecerdasan buatan (Gemini AI) ke dalam sistem aplikasi.
+3. Menerapkan sistem autentikasi dan keamanan berbasis token (JWT).
+4. Mengintegrasikan fitur perangkat (kamera dan lokasi) pada aplikasi mobile.
+5. Memahami serta menerapkan prinsip dasar keamanan aplikasi dan digital forensik.
+6. Menghasilkan project terstruktur, terdokumentasi, dan sesuai standar praktikum.
 
-Menghasilkan aplikasi yang terstruktur, terdokumentasi, dan dapat diuji.
+---
 
-Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
-JavaScript
+- JavaScript  
+- Node.js  
+- Express.js  
+- Angular / Ionic Framework  
+- JSON Web Token (JWT)  
+- MySQL  
+- Google Maps API  
+- Gemini AI API  
 
-Node.js
+---
 
-Express.js
+## Struktur Repository
 
-Angular / Ionic
-
-Firebase
-
-MySQL
-
-Gemini AI API
-
-Struktur Repository
-Tugas-3-Kelompok-7/
+```
+Tugas_3_Kelompok_7/
 │
 ├── P8_HTTP_Client_Observable/
 ├── P9_Gemini_AI_Integration/
-├── P10/
-├── P11/
-├── P12/
-├── P13/
+├── p10-p11-crud-mahasiswa/
+├── p12-auth-jwt/
+├── P13 - Kontrol Kamera dan Google Maps/
 ├── P14/
 ├── P15_Mobile_Security_Digital_Forensics/
 │
 └── README.md
+```
 
-Setiap folder merepresentasikan implementasi praktikum sesuai dengan pertemuan yang bersangkutan.
+Setiap folder merepresentasikan implementasi sesuai dengan topik per pertemuan.
 
-Dokumentasi Video Praktikum
+---
 
-Setiap pertemuan didokumentasikan dalam bentuk video berdurasi 9–15 menit yang mencakup:
+## Dokumentasi Video
 
-Perkenalan identitas mahasiswa dan kelompok
+Setiap praktikum didokumentasikan dalam bentuk video berdurasi 9–15 menit yang mencakup:
 
-Penjelasan langkah implementasi dan kode program
+- Perkenalan identitas dan kelompok  
+- Penjelasan implementasi kode  
+- Demonstrasi fitur aplikasi  
+- Analisis hasil dan kesimpulan  
 
-Demonstrasi hasil eksekusi aplikasi
-
-Analisis dan kesimpulan
-
-Link video:
+Link dokumentasi video:  
 (Tambahkan link Google Drive / YouTube di sini)
 
-Repository
+---
 
-Link GitHub:
-(Tambahkan link repository di sini)
+## Cara Menjalankan Project
 
-Penutup
+1. Clone repository:
+   ```
+   git clone <link-repository>
+   ```
 
-Project ini disusun sebagai pemenuhan Tugas 3 Kelompok dan sebagai implementasi komprehensif materi P8 hingga P15. Seluruh fitur telah diuji dan berjalan sesuai dengan tujuan pembelajaran yang ditetapkan.
+2. Masuk ke folder per pertemuan:
+   ```
+   cd nama-folder
+   ```
+
+3. Install dependency:
+   ```
+   npm install
+   ```
+
+4. Jalankan aplikasi:
+   ```
+   npm start
+   ```
+   atau
+   ```
+   ionic serve
+   ```
+
+(Sesuaikan dengan konfigurasi masing-masing folder)
+
+---
+
+## Kesimpulan
+
+Project ini merupakan implementasi komprehensif materi praktikum dari P8 hingga P15 yang mencakup integrasi API, sistem keamanan, pemanfaatan fitur perangkat mobile, serta analisis digital forensik.  
+
+Seluruh fitur telah diuji dan berjalan sesuai dengan tujuan pembelajaran yang ditetapkan.
+
+---
+
+**Kelompok 7**  
+Tugas 3 Praktikum
