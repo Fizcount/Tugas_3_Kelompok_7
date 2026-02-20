@@ -66,7 +66,7 @@ Tugas_3_Kelompok_7/
 ├── p10-p11-crud-mahasiswa/
 ├── p12-auth-jwt/
 ├── P13 - Kontrol Kamera dan Google Maps/
-├── P14/
+├── P14 - E-Wallet Clone Gen Z UI & AI Integration/
 ├── P15_Mobile_Security_Digital_Forensics/
 │
 └── README.md
