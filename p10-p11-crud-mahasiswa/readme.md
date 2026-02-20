@@ -1,12 +1,6 @@
 # Tugas Kelompok: Aplikasi CRUD Mahasiswa (Ionic + Express + MySQL)
 
 Project ini adalah implementasi fitur lengkap CRUD dengan UX modern.
-
-## 👥 Anggota Kelompok
-1. MUHAMMAD FAIZ (220511139)
-2. RAHMA SYIFATUN NABILAH (221511013)
-3. FALASHIFA GADING (220511029) 
-4. IBNU RISFAI (220511002)
    
 ## 🚀 Fitur Utama (Nilai A)
 1.  **Sliding Items:** Tombol Edit/Hapus tersembunyi (Swipe Left).
