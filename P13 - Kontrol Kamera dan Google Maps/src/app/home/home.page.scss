@@ -1,0 +1,14 @@
+/* Mengatur ukuran container peta Leaflet */
+#map {
+  width: 100%;
+  height: 250px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+  z-index: 1; /* Mencegah peta menutupi tombol/input Ionic */
+}
+
+/* Sedikit jarak tambahan di atas dan bawah elemen */
+.ion-margin-top {
+  margin-top: 16px;
+}

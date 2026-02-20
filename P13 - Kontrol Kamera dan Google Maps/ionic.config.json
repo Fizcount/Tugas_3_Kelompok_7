@@ -1,0 +1,7 @@
+{
+  "name": "geo-laporan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

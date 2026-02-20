@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Dashboard Rahasia</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        LOGOUT
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <h1>🔓 Akses Diterima!</h1>
+    <p>
+      Anda melihat halaman ini karena Anda memiliki 
+      <b>Token JWT</b> yang valid.
+    </p>
+    <p>
+      AuthGuard telah memverifikasi token Anda di Capacitor Preferences.
+    </p>
+  </div>
+</ion-content>

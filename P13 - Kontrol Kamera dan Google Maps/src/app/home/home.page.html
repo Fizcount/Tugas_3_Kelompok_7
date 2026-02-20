@@ -1,0 +1,231 @@
+<!-- 
+
+Di bagian paling atas ini adalah header aplikasi.
+Property translucent bernilai true agar header bisa memiliki efek transparan di perangkat mobile.
+-->
+<ion-header [translucent]="true">
+  
+  <!-- 
+  
+  Ion-toolbar adalah bar navigasi utama.
+  Di sini saya menggunakan warna primary sebagai warna utama aplikasi.
+  -->
+  <ion-toolbar color="primary">
+    
+    <!-- 
+    
+    Ion-title menampilkan judul halaman aplikasi.
+    Judul aplikasi ini adalah Geo Laporan Kurir.
+    -->
+    <ion-title>Geo Laporan Kurir</ion-title>
+  
+  </ion-toolbar>
+</ion-header>
+
+<!-- 
+
+Ion-content adalah area utama tempat seluruh isi halaman ditampilkan.
+Fullscreen true agar memenuhi layar,
+dan ion-padding memberi jarak agar tidak terlalu mepet ke tepi.
+-->
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <!-- 
+  
+  Bagian ini menggunakan *ngIf.
+  Artinya jika user belum login, maka form login akan ditampilkan.
+  -->
+  <div *ngIf="!isLogin">
+    
+    <!-- 
+    
+    Ion-card digunakan sebagai wadah atau container form login.
+    -->
+    <ion-card>
+      
+      <!-- 
+      
+      Ini adalah header dari card login.
+      -->
+      <ion-card-header>
+        <ion-card-title>Login Petugas</ion-card-title>
+      </ion-card-header>
+
+      <!-- 
+      
+      Bagian ini adalah isi form login.
+      -->
+      <ion-card-content>
+        
+        <!-- 
+        
+        Ion-item membungkus input agar rapi.
+        -->
+        <ion-item>
+
+          <!-- 
+          
+          Position floating artinya label akan naik ke atas saat user mengetik.
+          -->
+          <ion-label position="floating">ID Kurir / Nama</ion-label>
+          
+          <!-- 
+          
+          NgModel di sini digunakan untuk two-way data binding.
+          Artinya data yang diketik langsung tersimpan di variabel username di TypeScript.
+          -->
+          <ion-input [(ngModel)]="username" type="text" placeholder="Masukkan Nama atau ID"></ion-input>
+        </ion-item>
+
+        <!-- 
+        
+        Ini adalah tombol login.
+        Expand block membuat tombol selebar container.
+        Saat ditekan akan menjalankan fungsi login().
+        -->
+        <ion-button expand="block" class="ion-margin-top" (click)="login()">
+          
+          <!-- 
+          
+          Icon login yang ditampilkan di sebelah kiri teks.
+          -->
+          <ion-icon name="log-in-outline" slot="start"></ion-icon>
+          
+          Masuk
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- 
+  
+  Jika user sudah login, maka bagian ini yang akan tampil.
+  -->
+  <div *ngIf="isLogin">
+    
+    <!-- 
+    
+    Card ini berisi form laporan pengiriman paket.
+    -->
+    <ion-card>
+      
+      <ion-card-header>
+        
+        <!-- 
+        
+        Judul laporan pengiriman.
+        -->
+        <ion-card-title>Laporan Pengiriman</ion-card-title>
+        
+        <!-- 
+        
+        Interpolation {{ username }} digunakan untuk menampilkan nama petugas yang sedang login.
+        -->
+        <ion-card-subtitle>Petugas: <strong>{{ username }}</strong></ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        
+        <!-- 
+        
+        Input untuk memasukkan nomor resi paket.
+        -->
+        <ion-item>
+          <ion-label position="floating">Nomor Resi Paket</ion-label>
+          
+          <!-- 
+          
+          NgModel kembali digunakan agar nomor resi tersimpan di variabel noResi.
+          -->
+          <ion-input [(ngModel)]="noResi" type="text" placeholder="Contoh: RESI123456"></ion-input>
+        </ion-item>
+
+        <!-- 
+        
+        Bagian ini untuk mengambil koordinat GPS penerima.
+        -->
+        <div class="ion-margin-top">
+          
+          <!-- 
+          
+          Tombol ini akan memanggil fungsi ambilLokasi().
+          -->
+          <ion-button expand="block" color="secondary" (click)="ambilLokasi()">
+            
+            <ion-icon name="location-outline" slot="start"></ion-icon>
+            
+            Ambil Koordinat Penerima
+          </ion-button>
+          
+          <!-- 
+          
+          Jika latitude dan longitude sudah tersedia,
+          maka koordinat akan ditampilkan di bawah tombol.
+          -->
+          <div *ngIf="latitude && longitude" class="ion-margin-top" style="text-align: center;">
+            
+            <p><strong>Lat:</strong> {{ latitude }} | <strong>Lng:</strong> {{ longitude }}</p>
+          </div>
+
+          <!-- 
+          
+          Div dengan id map ini adalah tempat Leaflet menampilkan peta.
+          -->
+          <div id="map"></div>
+        </div>
+
+        <!-- 
+        
+        Bagian ini digunakan untuk mengambil foto bukti paket.
+        -->
+        <div class="ion-margin-top">
+          
+          <!-- 
+          
+          Tombol ini memanggil fungsi ambilFoto().
+          -->
+          <ion-button expand="block" color="tertiary" (click)="ambilFoto()">
+            
+            <ion-icon name="camera-outline" slot="start"></ion-icon>
+            
+            Foto Bukti Paket
+          </ion-button>
+          
+          <!-- 
+          
+          Jika foto sudah berhasil diambil,
+          maka preview gambar akan ditampilkan di bawahnya.
+          -->
+          <div *ngIf="foto" class="ion-margin-top">
+            
+            <p style="text-align: center; margin-bottom: 5px;"><strong>Preview Foto:</strong></p>
+            
+            <!-- 
+            
+            Property binding [src] digunakan agar gambar terhubung langsung ke variabel foto.
+            -->
+            <img [src]="foto" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;" />
+          </div>
+        </div>
+
+        <!-- 
+        
+        Tombol terakhir ini digunakan untuk menyimpan laporan ke database.
+        Akan menjalankan fungsi simpanData().
+        -->
+        <div class="ion-margin-top">
+          
+          <ion-button expand="block" color="success" (click)="simpanData()">
+            
+            <ion-icon name="save-outline" slot="start"></ion-icon>
+            
+            Simpan & Kirim Laporan
+          </ion-button>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

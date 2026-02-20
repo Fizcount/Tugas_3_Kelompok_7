@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login System</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center ion-margin-bottom">
+    <h2>Selamat Datang</h2>
+    <p>Silakan masuk untuk mengakses area rahasia.</p>
+  </div>
+
+  <ion-item>
+    <ion-input label="Username" labelPlacement="floating" fill="outline"
+      [(ngModel)]="data.username"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-input label="Password" type="password" labelPlacement="floating" fill="outline"
+      [(ngModel)]="data.password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" class="ion-margin-top" (click)="onLogin()">
+    MASUK
+  </ion-button>
+
+  <ion-button expand="block" fill="clear" color="medium" routerLink="/register">
+    Belum punya akun? Daftar
+  </ion-button>
+</ion-content>
