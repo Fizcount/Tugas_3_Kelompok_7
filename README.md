@@ -1,10 +1,13 @@
 # TUGAS 3 KELOMPOK  
 ## Implementasi Praktikum P8 – P15  
+### Mata Kuliah Pemrograman Bergerak  
 ### HTTP Client Observable, Gemini AI Integration, Mobile Security Defense & Digital Forensics
 
 ---
 
-## Identitas Kelompok 7
+## Identitas Kelompok 7  
+**Kelas: TI22D**  
+**Mata Kuliah: Pemrograman Bergerak**
 
 | No | NIM       | Nama                      |
 |----|----------|---------------------------|
@@ -16,8 +19,9 @@
 
 ## Deskripsi Repository
 
-Repository ini merupakan kumpulan hasil praktikum dari Pertemuan 8 (P8) sampai dengan Pertemuan 15 (P15).  
-Seluruh materi diimplementasikan dalam satu repository utama sebagai bentuk pemenuhan Tugas 3 Kelompok.
+Repository ini merupakan kumpulan hasil praktikum dari Pertemuan 8 (P8) sampai dengan Pertemuan 15 (P15) pada Mata Kuliah **Pemrograman Bergerak**.  
+
+Seluruh materi diimplementasikan dalam satu repository utama sebagai bentuk pemenuhan **Tugas 3 Kelompok**.
 
 Cakupan materi yang dikerjakan meliputi:
 
@@ -28,7 +32,7 @@ Cakupan materi yang dikerjakan meliputi:
 - Penerapan Mobile Security Defense  
 - Praktik dan analisis dasar Digital Forensics  
 
-Setiap pertemuan direalisasikan dalam bentuk source code yang dapat dijalankan dan diuji secara mandiri.
+Setiap pertemuan direalisasikan dalam bentuk source code yang dapat dijalankan dan diuji secara mandiri sesuai dengan tujuan pembelajaran.
 
 ---
 
@@ -39,7 +43,7 @@ Setiap pertemuan direalisasikan dalam bentuk source code yang dapat dijalankan d
 3. Menerapkan sistem autentikasi dan keamanan berbasis token (JWT).
 4. Mengintegrasikan fitur perangkat (kamera dan lokasi) pada aplikasi mobile.
 5. Memahami serta menerapkan prinsip dasar keamanan aplikasi dan digital forensik.
-6. Menghasilkan project terstruktur, terdokumentasi, dan sesuai standar praktikum.
+6. Menghasilkan project yang terstruktur, terdokumentasi, dan sesuai standar praktikum.
 
 ---
 
@@ -81,7 +85,7 @@ Setiap folder merepresentasikan implementasi sesuai dengan topik per pertemuan.
 Setiap praktikum didokumentasikan dalam bentuk video berdurasi 9–15 menit yang mencakup:
 
 - Perkenalan identitas dan kelompok  
-- Penjelasan implementasi kode  
+- Penjelasan implementasi kode program  
 - Demonstrasi fitur aplikasi  
 - Analisis hasil dan kesimpulan  
 
@@ -97,7 +101,7 @@ Link dokumentasi video:
    git clone <link-repository>
    ```
 
-2. Masuk ke folder per pertemuan:
+2. Masuk ke folder sesuai pertemuan:
    ```
    cd nama-folder
    ```
@@ -122,11 +126,11 @@ Link dokumentasi video:
 
 ## Kesimpulan
 
-Project ini merupakan implementasi komprehensif materi praktikum dari P8 hingga P15 yang mencakup integrasi API, sistem keamanan, pemanfaatan fitur perangkat mobile, serta analisis digital forensik.  
+Project ini merupakan implementasi komprehensif materi praktikum Pemrograman Bergerak dari P8 hingga P15 yang mencakup integrasi API, sistem keamanan, pemanfaatan fitur perangkat mobile, serta analisis digital forensik.  
 
 Seluruh fitur telah diuji dan berjalan sesuai dengan tujuan pembelajaran yang ditetapkan.
 
 ---
 
-**Kelompok 7**  
-Tugas 3 Praktikum
+**Kelompok 7 – TI22D**  
+Tugas 3 Mata Kuliah Pemrograman Bergerak
