@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../tugas-toko"
+		}
+	],
+	"settings": {
+		"cSpell.enabled": false,
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
