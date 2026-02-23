@@ -91,6 +91,7 @@ Setiap praktikum didokumentasikan dalam bentuk video berdurasi 9–15 menit yang
 
 Link dokumentasi video:  
 https://drive.google.com/drive/folders/1Vpa8yznKSv5i-ZIfEjMX-3zflfZDFZSt?usp=sharing
+https://youtu.be/uyHjWzUKk3g?si=hqq6ChfR-GUX5UgH
 
 ---
 
